@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpapers_delight_doc=self.webpackChunkpapers_delight_doc||[]).push([["3220"],{1912(e){e.exports=JSON.parse('{"blogBasePath":"/PapersDelightDoc/blog","blogTitle":"Blog","authorsListPath":"/PapersDelightDoc/blog/authors"}')}}]);
