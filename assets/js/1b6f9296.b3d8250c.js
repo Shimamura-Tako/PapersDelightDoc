@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpapers_delight_doc=self.webpackChunkpapers_delight_doc||[]).push([["6967"],{6236(e){e.exports=JSON.parse('{"metadata":{"permalink":"/PapersDelightDoc/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

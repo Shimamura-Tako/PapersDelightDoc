@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpapers_delight_doc=self.webpackChunkpapers_delight_doc||[]).push([["675"],{8552(e){e.exports=JSON.parse('{"name":"docusaurus-plugin-content-pages","id":"default"}')}}]);
