@@ -1,0 +1,32 @@
+name: Trigger Build
+
+on:
+  push:
+    branches: [ main ]        # 当推送到 main 分支时触发
+  workflow_dispatch:          # 也支持手动触发
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send POST request
+        run: |
+          REPO_URL="https://github.com/${{ github.repository }}.git"
+          echo "Repository URL: $REPO_URL"
+
+          # 使用 jq 安全构建 JSON（GitHub Ubuntu 自带 jq）
+          JSON_DATA=$(jq -n --arg repo "$REPO_URL" '{repo: $repo}')
+          echo "Payload: $JSON_DATA"
+
+          # 发送请求，带详细输出和错误处理
+          curl -v --fail -X POST http://coldmouse.net:15379/build \
+               -H "Content-Type: application/json" \
+               -d "$JSON_DATA" \
+               -w "\nHTTP Status: %{http_code}\n"
+
+          # 检查 curl 是否失败
+          if [ $? -ne 0 ]; then
+            echo "::error::POST request failed!"
+            exit 1
+          fi
+          echo "Request succeeded."
