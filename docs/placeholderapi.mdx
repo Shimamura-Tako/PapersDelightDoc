@@ -1,0 +1,46 @@
+---
+sidebar_position: 5
+title: PlaceholderAPI
+description: Paper's Delight 提供的 PlaceholderAPI 占位符。
+---
+
+# PlaceholderAPI
+
+Paper's Delight 提供以下 PlaceholderAPI 占位符。
+
+## 统计信息类
+
+| 占位符 | 描述 |
+| --- | --- |
+| `%papersdelight_cooking_pot_cook%` | 厨锅取出成品总次数 |
+| `%papersdelight_cooking_pot_cook_<ns:id>%` | 厨锅烹饪指定食物次数，例如 `%papersdelight_cooking_pot_cook_farmersdelight:beef_stew%` |
+| `%papersdelight_skillet_cook%` | 煎锅烹饪食物总次数 |
+| `%papersdelight_skillet_cook_<ns:id>%` | 煎锅输出指定食物次数 |
+| `%papersdelight_cutting_board_cut%` | 砧板切制总次数 |
+| `%papersdelight_cutting_board_cut_<ns:id>%` | 切开指定物品次数 |
+
+### 指定其他玩家（支持离线玩家）
+
+```text
+%papersdelight_cutting_board_cut_of_PLAYERNAME%
+%papersdelight_cooking_pot_cook_of_PLAYERNAME%
+%papersdelight_skillet_cook_of_PLAYERNAME%
+```
+
+## 效果状态类
+
+| 占位符 | 描述 |
+| --- | --- |
+| `%papersdelight_effect_xxx%` | 效果是否正在生效（`true` / `false`） |
+| `%papersdelight_effect_xxx_time_remaining%` | 剩余秒数（整数） |
+| `%papersdelight_effect_xxx_time_remaining_formatted%` | 剩余时间（格式 `M:SS`） |
+| `%papersdelight_effect_xxx_times%` | 总施加次数 |
+
+其中 `xxx` 替换为效果 ID，例如 `comfort` 或 `garlic`。
+
+### 指定其他玩家（仅支持在线玩家）
+
+```text
+%papersdelight_PLAYERNAME_effect_comfort%
+%papersdelight_PLAYERNAME_effect_garlic_time_remaining_formatted%
+```
