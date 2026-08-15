@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: "Paper's Delight",
+  tagline: 'Paper/Folia 服务端上的农夫乐事风格烹饪插件。',
   favicon: 'img/pd_icon.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
