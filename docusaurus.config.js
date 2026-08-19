@@ -88,46 +88,46 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: '文档',
             items: [
               {
-            label: '文档',
+                label: '插件文档',
                 to: '/',
               },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
               {
                 label: '更新日志',
                 to: '/changelog',
               },
+            ],
+          },
+          {
+            title: '购买插件',
+            items: [
               {
-                label: 'GitHub',
+                label: 'MineBBS',
+                href: 'https://www.minebbs.com/resources/17022/',
+              },
+              {
+                label: '联络作者',
+                href: 'https://shimamura-tako.github.io/PapersDelightDoc/#%E8%B4%AD%E4%B9%B0%E6%96%B9%E5%BC%8F',
+              },
+            ],
+          },
+          {
+            title: '更多',
+            items: [
+              {
+                label: '提交问题',
+                href: 'https://github.com/Shimamura-Tako/PapersDelight-ISSUE-REPORT/issues',
+              },
+              {
+                label: '文档仓库',
                 href: 'https://github.com/Shimamura-Tako/PapersDelightDoc',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Shimamura Tako. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
