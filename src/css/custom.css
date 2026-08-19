@@ -32,7 +32,7 @@
 .footer--dark {
   --ifm-footer-background-color: #161616;
   background-image: url('/img/pddoc_footer.png');
-  background-size: cover;
+  background-size: 100% auto;
   background-position: center bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
