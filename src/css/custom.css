@@ -30,5 +30,9 @@
 }
 
 .footer--dark {
-  --ifm-footer-background-color: #111111;
+  --ifm-footer-background-color: #161616;
+  background-image: url('/img/pddoc_footer.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
