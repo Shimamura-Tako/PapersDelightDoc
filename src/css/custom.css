@@ -35,4 +35,12 @@
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.footer--dark a,
+.footer--dark .footer__title,
+.footer--dark .footer__copyright,
+.footer--dark .footer__link-item {
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
 }
