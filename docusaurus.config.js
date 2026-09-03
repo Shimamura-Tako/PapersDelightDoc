@@ -126,6 +126,19 @@ const config = {
               },
             ],
           },
+          {
+            title: '友链',
+            items: [
+              {
+                label: 'Neko!AC',
+                href: 'https://www.minebbs.com/resources/neko-folia.17099/',
+              },
+              {
+                label: 'kkfish',
+                href: 'https://www.minebbs.com/resources/kkfish-folia.15002/',
+              },
+            ],
+          },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Shimamura Tako. Built with Docusaurus.`,
       },
